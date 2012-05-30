@@ -29,6 +29,26 @@ define('ENV', 'DEV');
 
 /*
  * ----------------------------------------------------------------------------
+ * LOGGING
+ * ----------------------------------------------------------------------------
+ * 
+ * Define the logging level
+ * 
+ * options: 0    - Do not log anything
+ *          1    - Log only errors
+ *          2    - Log errors and database transactions
+ *          3    - Log errors, database transactions and debugging
+ *          4    - Log everything
+ * 
+ * 
+ * 
+ */
+
+define('LOG', '0');
+
+
+/*
+ * ----------------------------------------------------------------------------
  * ERROR REPORTING
  * ----------------------------------------------------------------------------
  * 
