@@ -74,7 +74,7 @@ class router
                 {
                         //check if routes are setup
 
-                        if(isset($route))
+                        if($route)
                         {
                                 //1st check if a route is setup
                                 if(key_exists($_parts[0], $route))
