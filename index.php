@@ -132,6 +132,9 @@ define('SYS_PATH', realpath(SYSTEM));
 //define public HTML path
 define('PUB_PATH', realpath(PUBLIC_HTML));
 
+//define the url to the public html folder
+define('PUB_URL', BASEURL.SEP.PUBLIC_HTML);
+
 
 
 
