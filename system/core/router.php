@@ -23,9 +23,13 @@ class router
 
         //save the url parts to this property
         protected $_url_parts;
+
         protected $_controller = false;
+
         protected $_method = false;
+
         protected $_params = false;
+
         protected $_key = false;
 
         //on load the construct method will get the url parts
@@ -68,15 +72,26 @@ class router
                 }
                 else
                 {
-                        //1st check if a route is setup
-                        if(key_exists($_parts[0], $route))
+                        //check if routes are setup
+
+                        if(isset($route))
                         {
-                                $this->_controller = $route[$_parts[0]];
+                                //1st check if a route is setup
+                                if(key_exists($_parts[0], $route))
+                                {
+                                        $this->_controller = $route[$_parts[0]];
+                                }
+                                else
+                                {
+                                        $this->_controller = $_parts[0];
+                                }
                         }
                         else
                         {
                                 $this->_controller = $_parts[0];
                         }
+
+
 
 
                         //check for a method
