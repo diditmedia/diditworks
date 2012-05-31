@@ -36,7 +36,7 @@ class debug
                         $w = fopen($file, 'a');
 
                         //write the message to the file 
-                        fwrite($w, date('d.m.y h:i:s') . ' ' . $message . ' ' . 'FILE: ' . __FILE__ . ' LINE: ' . __LINE__ . PHP_EOL);
+                        fwrite($w, date('d.m.y h:i:s') . ' ' . $message .  PHP_EOL);
 
                         //close the file
                         fclose($w);

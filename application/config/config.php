@@ -21,7 +21,7 @@
  * 
  */
 
-$config['core_classes'] = array('config','model');
+$config['core_classes'] = array('config','model', 'debug');
 
 //automatically load these helpers
 $config['helpers'] = array();

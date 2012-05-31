@@ -38,6 +38,8 @@
  * @package diditworks
  * @author Paul Mulgrew
  */
+
+debug::log('database class file loaded', 4);
 class db
 {
 
@@ -86,7 +88,7 @@ class db
                         $this->_conn = new PDO($dsn, $username, $passwd);
                 } catch(PDOException $e)
                 {
-                        //dm_logger::debug($e->getMessage());
+                        debug::log($e->getMessage(), 1);
 
                         exit('error connecting to database');
                 }
@@ -792,7 +794,7 @@ class db
                         $this->_stm->execute($this->_bind_params);
                 }
 
-                //dm_logger::debug($this->_final_statement);
+                debug::log($this->_final_statement, 2);
 
                 $this->reset();
 

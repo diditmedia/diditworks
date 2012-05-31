@@ -116,7 +116,7 @@ define('EXT', '.php');
 
 //define the root folder
 //if the application is installed in the root directory leave this blank
-define('ROOT', 'dm_fw_v03');
+define('ROOT', 'diditworks');
 
 //define application folder
 define('APPLICATION', 'application');
