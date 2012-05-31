@@ -1,8 +1,6 @@
 <?php
 
-$user = new user(1);
-
-print_r($user);
+echo url_segment(1);
 
 ?>
 </form>

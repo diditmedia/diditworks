@@ -24,10 +24,25 @@
 $config['core_classes'] = array('config','model', 'debug');
 
 //automatically load these helpers
-$config['helpers'] = array();
+$config['helpers'] = array('url_segment');
 
 //automatically load these libraries
 $config['libraries'] = array();
+
+/*
+ * ----------------------------------------------------------------
+ * AUTO INCUDE APPLICATION FILES
+ * ----------------------------------------------------------------
+ * 
+ * Set the files that should be included in your application.
+ * Set one file per line in the following format:
+ * 
+ * $config['auto_include'] = array('file' => 'file', 'path' => 'path');
+ * $config['auto_include'] = array('file' => 'file2', 'path' => 'path/another_dir');
+ * 
+ */
+
+
 
 /*
  * ---------------------------------------------------------------

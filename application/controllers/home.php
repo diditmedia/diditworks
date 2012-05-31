@@ -20,6 +20,7 @@ class home extends controller
                 $this->forms = & load('forms', 'libraries');
                 $this->loader->helper('form_helper');
                 $this->post_model = $this->loader->model('post_model');
+                $this->loader->helper('url_helper');
                 
                 ini_set('include_path', APP_PATH.SEP.'classes');
                 

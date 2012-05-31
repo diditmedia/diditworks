@@ -5,6 +5,7 @@
  *
  * @package diditworks
  * @author Paul Mulgrew
+ * @todo this entire class needs reworked
  */
 class loader
 {
