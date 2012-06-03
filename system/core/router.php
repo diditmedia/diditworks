@@ -1,4 +1,5 @@
 <?php
+debug::log('Router file loaded', 4);
 
 /**
  * -----------------------------------------------------------------------
@@ -170,7 +171,7 @@ class router
                 }
                 elseif(is_null($controller) && $this->_controller === false)
                 {
-                        exit('No route or default route set');
+                        dm_error::display_error('No route or default route set');
                 }
                 elseif($this->_controller !== false)
                 {
@@ -211,12 +212,12 @@ class router
                         }
                         else
                         {
-                                exit('Method: ' . $this->_method . ' does not exist');
+                                dm_error::display_error('Method: ' . $this->_method . ' does not exist');
                         }
                 }
                 else
                 {
-                        exit('The controller: ' . $controller . ' could not be found');
+                        dm_error::display_error('The controller: ' . $controller . ' could not be found');
                 }
 
         }

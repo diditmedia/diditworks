@@ -1,4 +1,5 @@
 <?php
+debug::log('Base model file loaded', 4);
 
 /**
  * Description of model

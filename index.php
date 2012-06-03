@@ -44,7 +44,7 @@ define('ENV', 'DEV');
  * 
  */
 
-define('LOG', '0');
+define('LOG', '4');
 
 
 /*

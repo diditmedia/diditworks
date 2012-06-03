@@ -26,11 +26,21 @@ class debug
                         //chefk if the log directory exists and if it doesnt create it
                         if(!is_dir($logpath))
                         {
-                                mkdir($logpath, 0777);
+                                mkdir($logpath, 0755);
                         }
+                        
+                        //create a directory for the current month/year
+                        if(!is_dir($logpath.SEP.date('M-Y')))
+                        {
+                                mkdir($logpath.SEP.date('M-Y'), 0755);
+                                
+                                
+                        }
+                        
+                        $logpath = $logpath.SEP.date('M-Y');
 
                         //define the log file
-                        $file = $logpath . '/log.txt';
+                        $file = $logpath . '/'.date('D-j').'.txt';
 
                         //open the file for appending
                         $w = fopen($file, 'a');

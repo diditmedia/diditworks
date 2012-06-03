@@ -1,4 +1,5 @@
 <?php
+debug::log('View file loaded', 4);
 
 /**
  * Description of view

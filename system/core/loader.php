@@ -1,4 +1,5 @@
 <?php
+debug::log('Loader class file loaded', 4);
 
 /**
  * The loader class will assist in loading various components of the application
@@ -61,7 +62,7 @@ class loader
                 }
                 else
                 {
-                        exit('Config item core_classes is not configured properly');
+                        dm_error::display_error('Config item core_classes is not configured properly');
                 }
 
         }
@@ -179,7 +180,7 @@ class loader
                         }
                         else
                         {
-                                exit('Model: ' . $model . ' Could not be found');
+                                dm_error::display_error('Model: ' . $model . ' Could not be found');
                         }
 
                         return $loaded;
@@ -208,7 +209,7 @@ class loader
                 }
                 else
                 {
-                        exit('view: ' . $view . ' does not exist');
+                        dm_error::display_error('view: ' . $view . ' does not exist');
                 }
 
         }
@@ -233,7 +234,7 @@ class loader
                         }
                         else
                         {
-                                exit('Helper: ' . $helper . ' does not exist');
+                                dm_error::display_error('Helper: ' . $helper . ' does not exist');
                         }
                 }
 

@@ -1,4 +1,5 @@
 <?php
+debug::log('Common Functions Loaded', 4);
 
 /**
  * -------------------------------------------------------------------
@@ -56,7 +57,7 @@ function &load($class, $dir = 'core')
                 {
                         //include it
                         require $loc . $class . EXT;
-                        
+
                         //if the class has been found assign it to a new variable
                         $class_name = $class;
 
@@ -68,36 +69,42 @@ function &load($class, $dir = 'core')
         //check if we found the class
         if($class_name != '')
         {
-                
-                
-                
-                
+
+
+
+
                 //instantuate the class and save it in the $loaded array
                 $loaded[$class_name] = new $class_name;
-                
+
                 //track loaded classes
                 class_is_loaded($class_name, $loaded[$class_name]);
-                
+
                 //return instance of the object
                 return $loaded[$class_name];
-        } else
+        }
+        else
         {
-                exit('Class ' . $class . ' could not be found in ' . $loc);
+                dm_error::display_error('Class ' . $class . ' could not be found in ' . $loc);
         }
 
 }
 
-function class_is_loaded($name = NULL,$obj = NULL)
+
+function class_is_loaded($name = NULL, $obj = NULL)
 {
-        static $_class_is_loaded = array();
-        
+        static $_class_is_loaded = array( );
+
         if(!is_null($name) && !is_null($obj))
         {
                 $_class_is_loaded[$name] = $obj;
-        } else {
+        }
+        else
+        {
                 return $_class_is_loaded;
         }
+
 }
+
 
 /*
  * ------------------------------------------------------------------------------
@@ -111,14 +118,19 @@ function class_is_loaded($name = NULL,$obj = NULL)
 function get_config($key)
 {
         global $config;
-        
+
         if(array_key_exists($key, $config))
         {
                 return $config[$key];
-        } else {
+        }
+        else
+        {
                 return false;
         }
+
 }
+
+
 /*
  * ------------------------------------------------------------------------------
  * GET INSTANCE
@@ -130,6 +142,8 @@ function get_config($key)
 function &get_instance()
 {
         return controller::getInstance();
+
 }
+
 
 ?>

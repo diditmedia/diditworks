@@ -1,4 +1,5 @@
 <?php
+debug::log('Application config file loaded', 4);
 
 /**
  * ----------------------------------------------------------------
@@ -21,7 +22,7 @@
  * 
  */
 
-$config['core_classes'] = array('config','model', 'debug');
+$config['core_classes'] = array('config','model');
 
 //automatically load these helpers
 $config['helpers'] = array('url_segment');
@@ -105,9 +106,9 @@ $config['route']['index'] = 'home';
  */
 
 $config['dbhost']       = 'localhost';
-$config['dbname']       = 'diditmed_fw';
+$config['dbname']       = 'iris_test';
 $config['dbuser']       = 'root';
-$config['dbpass']       = '';
+$config['dbpass']       = 'root';
 
 $config['dsn']          = 'mysql: host='.$config['dbhost'].';dbname='.$config['dbname'].';';
 

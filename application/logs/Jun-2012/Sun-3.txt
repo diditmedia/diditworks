@@ -1,0 +1,58 @@
+03.06.12 11:55:36 Common Functions Loaded
+03.06.12 11:55:36 Loader class file loaded
+03.06.12 11:55:36 Config Class loaded
+03.06.12 11:55:36 Base model file loaded
+03.06.12 11:55:36 Base Controller file loaded
+03.06.12 11:55:36 Router file loaded
+03.06.12 11:55:36 database class file loaded
+03.06.12 11:55:36 View file loaded
+03.06.12 12:04:51 Application config file loaded
+03.06.12 12:04:51 Common Functions Loaded
+03.06.12 12:04:51 Loader class file loaded
+03.06.12 12:04:51 Config Class loaded
+03.06.12 12:04:51 Base model file loaded
+03.06.12 12:04:51 Base Controller file loaded
+03.06.12 12:04:51 Router file loaded
+03.06.12 12:04:51 Home controller loaded
+03.06.12 12:04:51 Home controller index method loaded
+03.06.12 12:04:51 View file loaded
+03.06.12 12:05:27 Application config file loaded
+03.06.12 12:05:27 Common Functions Loaded
+03.06.12 12:05:27 Loader class file loaded
+03.06.12 12:05:27 Config Class loaded
+03.06.12 12:05:27 Base model file loaded
+03.06.12 12:05:27 Base Controller file loaded
+03.06.12 12:05:27 Router file loaded
+03.06.12 12:05:27 Home controller loaded
+03.06.12 12:05:27 Home controller index method loaded
+03.06.12 12:05:27 View file loaded
+03.06.12 12:05:37 Application config file loaded
+03.06.12 12:05:37 Common Functions Loaded
+03.06.12 12:05:37 Loader class file loaded
+03.06.12 12:05:37 Config Class loaded
+03.06.12 12:05:37 Base model file loaded
+03.06.12 12:05:37 Base Controller file loaded
+03.06.12 12:05:37 Router file loaded
+03.06.12 12:05:37 Home controller loaded
+03.06.12 12:05:37 Home controller index method loaded
+03.06.12 12:05:37 View file loaded
+03.06.12 12:06:52 ---------------------APPLICATION STARTING------------------
+03.06.12 12:06:52 Application config file loaded
+03.06.12 12:06:52 Common Functions Loaded
+03.06.12 12:06:52 Loader class file loaded
+03.06.12 12:06:52 Config Class loaded
+03.06.12 12:06:52 Base model file loaded
+03.06.12 12:06:52 Base Controller file loaded
+03.06.12 12:06:52 Router file loaded
+03.06.12 12:06:52 Home controller loaded
+03.06.12 12:06:52 Home controller index method loaded
+03.06.12 12:06:52 View file loaded
+03.06.12 12:07:21 ---------------------APPLICATION STARTING------------------
+03.06.12 12:07:21 Application config file loaded
+03.06.12 12:07:21 Common Functions Loaded
+03.06.12 12:07:21 Loader class file loaded
+03.06.12 12:07:21 Config Class loaded
+03.06.12 12:07:21 Base model file loaded
+03.06.12 12:07:21 Base Controller file loaded
+03.06.12 12:07:21 Router file loaded
+03.06.12 12:07:21 The controller: aaaa could not be found ERROR ID: 048-494-860

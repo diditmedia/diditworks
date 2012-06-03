@@ -22,6 +22,21 @@
  * 
  */
 
+/*
+ * --------------------------------------------------------------------
+ * DEBUGGING & ERROR HANDLING
+ * --------------------------------------------------------------------
+ * 
+ * Load the debugging and error files to track the functions of the
+ * application and handle any errors that may occur.
+ * 
+ */
+
+require SYS_PATH.SEP.'core'.SEP.'debug.php';
+require SYS_PATH.SEP.'core'.SEP.'dm_error.php';
+
+debug::log('---------------------APPLICATION STARTING------------------', 4);
+
 //load the config file
 if(file_exists(APP_PATH . SEP . 'config' . SEP . 'config.php'))
 {

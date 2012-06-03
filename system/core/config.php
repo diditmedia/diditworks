@@ -1,4 +1,5 @@
 <?php
+debug::log('Config Class loaded', 4);
 
 /**
  * Gets config keys

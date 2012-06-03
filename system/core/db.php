@@ -88,9 +88,9 @@ class db
                         $this->_conn = new PDO($dsn, $username, $passwd);
                 } catch(PDOException $e)
                 {
-                        debug::log($e->getMessage(), 1);
+                        
 
-                        exit('error connecting to database');
+                        dm_error::display_error($e->getMessage());
                 }
 
         }

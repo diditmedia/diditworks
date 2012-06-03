@@ -1,5 +1,5 @@
 <?php
-
+debug::log('Home controller loaded', 4);
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -16,29 +16,15 @@ class home extends controller
         function __construct()
         {
                 parent::__construct();
-                $this->db =& load('db');
-                $this->forms = & load('forms', 'libraries');
-                $this->loader->helper('form_helper');
-                $this->post_model = $this->loader->model('post_model');
-                $this->loader->helper('url_helper');
-                
-                ini_set('include_path', APP_PATH.SEP.'classes');
-                
-                $this->user = & load('user', 'classes');
-                
-                
-                
-                
-
         }
         
         function index()
         {
+                debug::log('Home controller index method loaded', 4);
                 
-                
-                $this->loader->view('template/header');
+                $view = $this->loader->view('template/header');
                 $view = $this->loader->view('home/hello');
-                $this->loader->view('template/footer');
+                $view = $this->loader->view('template/footer');
                 $view->build_output();
                 
                

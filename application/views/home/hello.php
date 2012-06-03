@@ -1,6 +1,6 @@
 <?php
 
-echo url_segment(1);
+
 
 ?>
-</form>
+<h1>Hello World</h1>
